@@ -38,6 +38,7 @@ async function search() {
     var response = await fetch(url, {
         "method": "GET",
         "headers": {
+            accept: 'application/json',
             "Content-Type": 'application/json'
         }
     })

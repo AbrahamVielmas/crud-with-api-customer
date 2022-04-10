@@ -26,7 +26,7 @@ function cerrarModal(){
 
 document.addEventListener("DOMContentLoaded", init);
 
-const URL_API = 'http://bavt-api-customers.somee.com/api/';
+const URL_API = 'https://bavt-api-customers.somee.com/api/';
 
 function init(){
     search();
@@ -38,8 +38,7 @@ async function search() {
     var response = await fetch(url, {
         "method": "GET",
         "headers": {
-            accept: 'application/json',
-            "Content-Type": 'application/json'
+            "Content-Type": 'application/json',
         }
     })
 
